@@ -1,0 +1,18 @@
+syntax: glob
+varint
+varint.exe
+build/
+.vs/
+*.d
+*.o
+*.obj
+*.ilk
+*.suo
+*.sdf
+*.opensdf
+*.mdf
+*.ldf
+*.bak
+*.pdb
+*.tlog
+*.json

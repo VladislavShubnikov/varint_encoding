@@ -77,6 +77,7 @@ using a bit interleaving technique.
 1. Input point coordinates should be non-negative
 2. There is no check on possible coordinate values range:
 they should be in [0..65535]
+3. Origin points order can be modified after compression/decompression
 
 ## Implementation notes
 The first bit is used as a "continuation bit".
@@ -143,8 +144,14 @@ Average performance for (1 * 1000 * 1000) points (GNU compiler, Release build):
 ## Project build and run
 
 This project was developed under Windows with
-MSVC and GNU compiler. Hopefully, it can be easily 
+MSVC or GNU or CLANG compiler. Hopefully, it can be easily 
 ported under Linux/other platforms.
+
+This project was tested with configuration:
+- Windows 11 Home, Version 25H2, OS build 26200.8246
+- Microsoft Visual Studio Community 2022
+- GCC 15.2.0
+- Clang 22.1.0
 
 ### Prerequisites
 1. cmake version 4.2.3 (required for build)
